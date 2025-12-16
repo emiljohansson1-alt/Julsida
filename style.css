@@ -1,0 +1,100 @@
+body {
+  color: white;
+  font-family: Arial;
+  text-align: center;
+  background-image: url('julbakgrund.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+.content {
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+  gap: 140px;
+}
+
+.box {
+  width: 30%;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.musik {
+  width: 20%;
+  background-color: green;
+  border-radius: 20px;
+}
+
+.gif-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+  padding-left: 10%;
+}
+
+.gif-container img {
+  height: 150px;
+  border-radius: 20px;
+}
+
+.music-btn {
+  font-size: 40px; /* storlek på tomten */
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+}
+
+/* Snöflingor */
+.snowflake {
+  position: fixed;
+  top: -50px;
+  font-size: 30px;
+  color: white;
+  animation: fall linear infinite;
+  animation-duration: 10s;
+}
+
+/* Variera tiden för olika snöflingor */
+.snowflake:nth-child(1) { animation-duration: 8s; animation-delay: 0s; }
+.snowflake:nth-child(2) { animation-duration: 12s; animation-delay: 2s; }
+.snowflake:nth-child(3) { animation-duration: 10s; animation-delay: 4s; }
+.snowflake:nth-child(4) { animation-duration: 9s; animation-delay: 1s; }
+.snowflake:nth-child(5) { animation-duration: 11s; animation-delay: 3s; }
+.snowflake:nth-child(6) { animation-duration: 13s; animation-delay: 2s; }
+.snowflake:nth-child(7) { animation-duration: 12s; animation-delay: 0s; }
+.snowflake:nth-child(8) { animation-duration: 14s; animation-delay: 5s; }
+.snowflake:nth-child(9) { animation-duration: 10s; animation-delay: 1s; }
+.snowflake:nth-child(10){ animation-duration: 15s; animation-delay: 3s; }
+
+@keyframes fall {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(100vh) rotate(360deg); opacity: 0.8; }
+}
+
+main {
+  height: 100vh;
+  padding: 0 40px;
+}
+
+/* Footer */
+.footer {
+  height: 100px;
+  background-color: rgb(169, 0, 0);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 5px solid black;
+  font-size: 14px;
+  width: 100%;
+  margin-top: 40px; /* avstånd till innehållet ovanför */
+}
+

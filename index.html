@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>God Jul!</title>
+  </head>
+  <body>
+    <main>
+      <div class="gif-container">
+        <img src="GIF1.gif" alt="" />
+        <h1>🎄 God Jul! 🎄</h1>
+        <img src="GIF3.gif" alt="" />
+      </div>
+
+      <div class="content">
+        <div class="box">
+          <p>
+            En liten sak med stor idé, hoppas den gör dig glad att se. Med
+            värme, skratt och julefrid, önskar jag dig en härlig juletid.
+          </p>
+        </div>
+
+        <div class="bilda">
+          <img src="nedladdning.jpg" alt="Bild på jul" />
+        </div>
+
+        <div class="musik">
+          <p>Klicka på tomten för julmusik 🎶</p>
+          <button id="tomteBtn" class="music-btn">🎅</button>
+        </div>
+      </div>
     
-</body>
+
+      <!-- Audio -->
+      <audio id="julmusik" loop>
+        <source src="christmas-show-438871.mp3" type="audio/mpeg" />
+        Din webbläsare stödjer inte ljud.
+      </audio>
+
+      <!-- Snöflingor -->
+      <div class="snowflake" style="left: 5%">❄</div>
+      <div class="snowflake" style="left: 15%">❄</div>
+      <div class="snowflake" style="left: 25%">❄</div>
+      <div class="snowflake" style="left: 35%">❄</div>
+      <div class="snowflake" style="left: 45%">❄</div>
+      <div class="snowflake" style="left: 55%">❄</div>
+      <div class="snowflake" style="left: 65%">❄</div>
+      <div class="snowflake" style="left: 75%">❄</div>
+      <div class="snowflake" style="left: 85%">❄</div>
+      <div class="snowflake" style="left: 95%">❄</div>
+    </main>
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Emil Johansson</p>
+    </footer>
+
+    <!-- Script längst ner -->
+    <script>
+      const audio = document.getElementById("julmusik");
+      const btn = document.getElementById("tomteBtn");
+
+      btn.addEventListener("click", () => {
+        audio.play();
+      });
+    </script>
+  </body>
 </html>
